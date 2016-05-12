@@ -1,0 +1,213 @@
+azulOscuro = #0B0b61
+grisFondo = #E8E8E8
+azulClaro = #22BCE0
+tamanoLetra = 16px
+naranja = #DD4F24
+azul = #22BCE0
+colorFondoMensaje = #efefef
+colorFondoMensajeMe = #cdcdcd
+
+@font-face{
+	font-family: "iconos";
+	src: url("../../font/flaticon.eot");
+	src: url("../../font/flaticon.eot#iefix") format("embedded-opentype"),
+	url("../../font/flaticon.woff") format("woff"),
+	url("../../font/flaticon.ttf") format("truetype"),
+	url("../../font/flaticon.svg") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+
+.msg
+	background colorFondoMensaje
+	margin 10px 0
+	padding 10px
+	width 750px
+	overflow hidden
+	position relative
+	
+	img
+		float right	
+		
+.me
+	background colorFondoMensajeMe
+	text-align right
+	
+	img
+		float left
+	
+
+	
+body
+	background grisFondo
+	font-family Arial
+	font-size tamanoLetra
+	
+	
+	.contenidos		
+		
+		.cont-mensaje-timeline			
+			display block
+			height 450px
+			margin 0 auto			
+			padding 0.5em			
+			overflow auto			
+			width 60%			
+						
+			a
+				color naranja
+			
+			.cont-mensaje
+				background white
+				border-radius 0 0 0.5em 0.5em
+				box-shadow 2px 2px 10px rgba(black, 0.5)
+				color grisclaro
+				margin-bottom 1em				
+				
+				.cont-mensaje-texto
+					
+					.cont-imagen-autor
+						float left
+						margin 0 0.5em 0 0
+						
+						img
+							vertical-align top							
+							width 70px							
+					
+					.cont-mensaje-detalles
+						height 80px
+						margin-left 100px
+						
+						.cont-mensaje-detalles-txt
+							color grisOscuro
+							font-size 14px
+							font-style italic
+							margin 0	
+							padding 1em 0.5em 1.5em 0
+							
+						.cont-mensaje-detalles-fecha
+							background azul
+							border-radius 8px
+							color white
+							font-size 14px
+							padding 0.2em 0.5em
+							text-decoration none
+							
+
+				.cont-mensaje-meta
+					border-top 2px solid azul
+					padding 0.5em
+					overflow hidden
+					
+					.cont-mensaje-autor
+						float right
+						
+						a
+							text-decoration none
+						
+					.cont-mensaje-fecha
+						float left
+						
+						.estrellita
+							padding 0 0.3em 0 0.8em
+							text-decoration none
+							
+							&:before
+								content "\e000"
+								font-family "iconos"
+				
+		.cont-envio		
+			margin: 0 auto;
+			padding 1em				
+			text-align center
+			width 100%		
+			
+			.cont-envio-submit	
+				color naranja
+				font-weight bold	
+				
+			.txtMensaje	
+				font-weight bold
+				width 400px
+				
+			.txtNombre
+				font-weight bold
+				width 200px
+	
+	footer
+		background naranja
+		color white
+		text-align center
+		padding 0.8em 0
+		
+		h3
+			font-size 14px
+			font-weight normal
+			
+			&:after
+				content " --"
+				
+			&:before
+				content "-- "			
+	
+	header
+		background azulOscuro
+		box-shadow 0 5px 0 rgba(0,0,0,0.2)
+		color white	
+		overflow hidden
+		position relative		
+		
+		.header-avatar
+			position absolute
+			right 30px
+			top 1px
+			
+			img
+				border-radius 60%
+				cursor pointer
+				width 70px
+		
+		.header-logo		
+			float left			
+			padding 0.5em
+			width 100px				
+			
+			img
+				border-right 2px solid white				
+				padding 0.8em
+				width 60px
+				
+		.header-titulo
+			font-size 14px
+			font-wight normal
+			font-style italic	
+		
+	nav
+		background azulClaro		
+		border-left 10px solid white	
+		
+		.menu-ppal
+			height 40px
+			line-height 40px
+			margin 0
+			padding 0
+			
+			li
+				display inline-block
+				
+				a
+					color white
+					display inline-block					
+					padding 0 1em
+					text-decoration none
+					
+					&:hover
+						background rgba(black, 0.1)
+
+						
+										
+		
+	
+
+
+			
